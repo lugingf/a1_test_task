@@ -1,0 +1,15 @@
+sum:
+    path: /sum/{a}/{b}
+    controller: App\Controller\SumController::sumAction
+
+position:
+    path: /position/{id}
+    controller: App\Controller\PositionController::getByIdAction
+
+positions_by_location:
+    path: /positions/filter
+    controller: App\Controller\PositionController::getByFiltersAction
+
+position_interesting:
+    path: /position_match
+    controller: App\Controller\PositionController::getBestMatchAction
